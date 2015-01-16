@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DD000000"
+        android:id="@+id/overlay_view"/>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/notification_view_icon"
+        android:src="@drawable/ic_launcher_loader"
+        android:padding="36dp"
+        android:layout_alignBottom="@+id/notification_view_circle_dialog"
+        android:layout_centerHorizontal="true" />
+
+    <cbedoy.circularloader.CBCircularProgressBar
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/notification_view_circle_dialog"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/notification_view_icon"
+        android:layout_alignStart="@+id/notification_view_icon"
+        android:layout_marginTop="168dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Loading..."
+        android:gravity="center"
+        android:textColor="#FAFAFA"
+        android:textSize="20sp"
+        android:id="@+id/txtLoading"
+        android:layout_below="@+id/notification_view_icon"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
